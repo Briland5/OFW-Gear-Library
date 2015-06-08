@@ -99,47 +99,46 @@ switch (_type) do {
 
 	};
 
-    case "RIFLE": {
+	case "RIFLE": {
+		
+		WESTUNIFORM;
+		PAK;
+		WESTGEAR(8, 0, 0, 2, 2, 0);
+		["rhsusf_100Rnd_556x45_soft_pouch", 1] call FNC_AddItem;
 
-    	WESTUNIFORM;
-    	PAK;
-        WESTGEAR(8, 0, 0, 2, 2, 0);
-        ["rhsusf_100Rnd_556x45_soft_pouch", 1] call FNC_AddItem;
+		["rhs_weap_m4a1_carryhandle_grip2"] call FNC_AddItem;
+			["rhsusf_acc_compm4"] call FNC_AddItem;
 
-        ["rhs_weap_m4a1_carryhandle_grip2"] call FNC_AddItem;
-        	["rhsusf_acc_compm4"] call FNC_AddItem;
+		["rhs_weap_M136"] call FNC_AddItem;
 
-        ["rhs_weap_M136"] call FNC_AddItem;
+	};
 
-    };
+	case "AR": {
 
-    case "AR": {
-
-    	WESTUNIFORM;
-    	PAK;
-        WESTGEAR(0, 0, 2, 2, 2, 0);
+		WESTUNIFORM;
+		WESTGEAR(0, 0, 2, 2, 2, 0);
 		["rhsusf_iotv_ucp_SAW"] call FNC_AddItem;
 		["rhsusf_100Rnd_556x45_soft_pouch", 3] call FNC_AddItem;
 
-        ["rhs_weap_m249_pip"] call FNC_AddItem;
-        	["rhsusf_acc_anpeq15"] call FNC_AddItem;
+		["rhs_weap_m249_pip"] call FNC_AddItem;
+			["rhsusf_acc_anpeq15"] call FNC_AddItem;
 
 		["tb_p_g17_T"] call FNC_AddItem;
 			["tb_acc_m6x_LLM"] call FNC_AddItem;
 
-    };
+	};
 
-    case "MED": {
+	case "MED": {
 
-    	WESTUNIFORM;
-    	PAK;
-        WESTGEAR(8, 0, 0, 2, 2, 0);
-        ["rhsusf_iotv_ucp_medic"] call FNC_AddItem;
-        ["rhsusf_assault_eagleaiii_ucp_medic"] call FNC_AddItem;
+		WESTUNIFORM;
+		PAK;
+		WESTGEAR(8, 0, 0, 2, 2, 0);
+		["rhsusf_iotv_ucp_medic"] call FNC_AddItem;
+		["rhsusf_assault_eagleaiii_ucp_medic"] call FNC_AddItem;
+		
+		["rhs_weap_m4a1_carryhandle_grip2"] call FNC_AddItem;
 
-        ["rhs_weap_m4a1_carryhandle_grip2"] call FNC_AddItem;
-
-        ["ACE_fieldDressing",15] call FNC_AddItem;
+		["ACE_fieldDressing",15] call FNC_AddItem;
 		["ACE_packingBandage",10] call FNC_AddItem;
 		["ACE_elasticBandage",20] call FNC_AddItem;
 		["ACE_tourniquet",5] call FNC_AddItem;
@@ -150,6 +149,6 @@ switch (_type) do {
 		["ACE_surgicalKit", 1] call FNC_AddItem;
 		["ACE_personalAidKit",4] call FNC_AddItem;
 
-    };
+	};
 
 };
