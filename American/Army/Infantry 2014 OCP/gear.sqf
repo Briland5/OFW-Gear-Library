@@ -11,7 +11,8 @@ _unit call FNC_RemoveAllGear;
 ["rhsusf_ach_helmet_ocp"] call FNC_AddItem; \
 ["rhsusf_assault_eagleaiii_ocp"] call FNC_AddItem;
 
-#define PAK \ // Personal Aid Kid Recomended by ACE team for ACE Advanced Medical
+// Personal Aid Kid Recomended by ACE team for ACE Advanced Medical
+#define PAK \
 ["ACE_fieldDressing", 4, "uniform"] call FNC_AddItem; \
 ["ACE_packingBandage", 3, "uniform"] call FNC_AddItem; \
 ["ACE_elasticBandage", 3, "uniform"] call FNC_AddItem; \
