@@ -2,6 +2,12 @@
 
 _unit call FNC_removeAllGear;
 
+// Call this with [this, "LOADOUT", (optional) "GROUPNAME"] call FNC_GearScript; in the Init field of the unit
+// Example:
+// [this, "SL", "1'1"] call FNC_GearScript;\
+//
+// more info: https://github.com/dklollol/Olsen-Framework-Arma-3/wiki/gear.sqf
+
 #define STANDARD_GEAR\
 //["rhsusf_ANPVS_14"] call FNC_addItem;
 ["ItemMap"] call FNC_addItem;\
